@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@600&family=Fira+Sans&family=Hind+Siliguri:wght@500&family=Roboto+Condensed:ital@1&display=swap');@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@600&family=Fira+Sans&family=Hind+Siliguri:wght@500&family=Montserrat:wght@100&family=Roboto+Condensed:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(255, 193, 142);
+  }
+  
+  body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    background: #D5D8B5;
+  }
+  
+  button{
+    padding: 8px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background: whitesmoke;
+  }
+  
+  button:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .container{
+    width: 1280px;
+    margin: auto;
+  }
+  
+  header{background-color: #513252;}
+  
+  #header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    padding: 0 20px;
+    background: #513252;
+  }
+  
+  #header button{
+    font-family: inherit;
+    border: 1px solid rgb(17, 17, 17);
+    color: rgb(0, 0, 0);
+    background-color: rgb(202, 78, 121);
+    font-size: larger;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    border-bottom-left-radius:20px;
+  }
+  
+  #create_card{
+    display: none;
+ 
+    margin:auto;
+    padding: 20px;
+    margin-top: 10px;
+    background: rgb(122, 64, 105);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
+    color: rgb(255, 193, 142);
+    width:400px;
+    height:300px;
+    border-top-left-radius:40px;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:60px;
+    border-bottom-left-radius:80px;
+  }
+  
+  #create_card h2{
+    color: rgb(255, 193, 142);
+    text-align: center;
+  }
+  
+  #create_card textarea{
+    width: 100%;
+    border-radius: 5px;
+    font-family: inherit;
+    border: 1px solid white;
+    resize: none;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+  }
+  
+  #create_card button{width: fit-content;
+       background-color: #A25B5B;
+       border: #A25B5B;
+  }
+  
+  #flashcards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 0px 10px;
+  }
+  
+  .flashcard{
+    width: 370px;
+    height: 200px;
+    word-wrap: break-word;
+    margin: 10px; 
+    background:#F68989;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
+    position: relative;
+    height:270px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    border-bottom-left-radius:20px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+  }
+
+  
+  .flashcard h2{font-size: 1rem;
+  border: #A25B5B;}
+  
+  .fa-minus{
+    top: 3%;
+    right: 2%;
+    position: absolute;
+    color: #D5D8B5;
+    transition: 0.3s ease-out;
+  }
+  
+  .fa-minus:hover{color: #A25B5B;}
+  
+  @media(max-width:1280px){
+    .container{width: 100%;}
+  }
+  
+  @media(max-width:768px){
+    .flashcard{margin: auto;}
+  
+    .flashcard{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media(max-width:480px){
+    #header{
+      padding: 20px;
+      gap: 10px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #create_card{width: 95%;}
+  
+    .flashcard{width: 100%;}
+  
+  }
